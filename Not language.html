@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>login form</title>
+  <style>
+    h1{
+     text-align: center;
+    }
+   .input{
+     display: block;
+      width: 90%;
+      padding: 15px;
+      border-radius: 50px;
+      border: 2px solid #0076ff;
+      
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+    
+   }
+   .input::placeholder{
+     font-size: 18px;
+     color: #9B9CAC;
+   }
+   .input:hover{
+     background-color: black;
+     color: rgba(233, 235, 255, 1);
+     border: 2px solid rgba(200, 200, 200, 1);
+   }
+   label{
+     display: block;
+     width: 90%;
+     padding: 15px;
+     border: 1px solid #0076ff;
+     
+     border-radius: 10px;
+     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3),
+     0 7px 21px 0 rgba(0, 0, 0, 0.20);
+   }
+   label>span {
+     display: inline-block;
+    
+     border: 3px solid #0076ff;
+     
+     margin-right: 30px;
+   
+   
+
+      
+    }
+    label:hover{
+      border: 3px solid deepskyblue;
+      border-radius: 50px;
+      color: white;
+      background-color: black;
+    }
+    #submit{
+      position: absolute;
+      height: 50px;
+      width: 200px;
+      background-color: blue;
+      border-radius: 10px; 
+      left: 100px;
+      font-size: 20px;
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+<h1>Admission form</h1>
+
+<input type="text" placeholder="Your full Name" class="input">
+<br>
+<input type="text" placeholder="Father's name" class="input">
+<br>
+
+<input type="text" placeholder="Mother's name" class="input" >
+<br>
+
+<input type="number" placeholder="Contact Number" class="input">
+<br>
+
+<h2>choose subject</h2>
+
+<input type="radio" name="subject" value="English" id="English" />
+      <label for="English"><span></span> English </label>
+      
+     
+      <input type="radio" name="subject" value="science" id="science" />
+      <label for="science"><span></span> science </label>
+      
+     
+     <input type="radio" name="subject" value="math" id="math" />
+      <label for="math"><span></span> math </label>
+     
+      
+      <input type="radio" name="subject" value="Computer" id="Computer" />
+      <label for="Computer"><span></span>Computer</label>
+      
+      
+      <input type="submit" value="submit" id="submit">
+<br>
+<br>
+
+</body>
+
+</html>
